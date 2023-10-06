@@ -1,0 +1,23 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  int num = 4;
+  int *ptr = &num;
+
+  char ch = 'a';
+
+  char *ptr1 = &ch;
+  //case i for the only printing addrees
+  cout<<ptr<<endl;
+
+  //case two that * pointing towards the value at the address
+
+  cout<<*ptr<<endl;
+  cout<<*ptr1<<endl;
+
+  cout<<"size is : "<<sizeof(ptr)<<endl;
+  cout<<"size is : "<<sizeof(ptr1)<<endl;
+  
+  return 0; 
+}
