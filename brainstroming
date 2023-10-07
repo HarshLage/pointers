@@ -1,0 +1,32 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+   int firstval  = 5;
+   int secondval = 15;
+   char thirdval = 'c';
+
+   int *p1;
+   int *p2;
+   char * p3;
+
+   p1 = &firstval;
+   p2 = &secondval;
+   p3 = &thirdval;
+
+   *p1 = 10;
+//    *p1 = 20;
+  
+//    p1 = p2;
+
+   *p1 = 20;
+    *p2 = *p1;
+//    *p1 = 20;
+   *p3 = 'b';
+
+   cout<<"firstval"<<" "<<firstval<<endl;
+   cout<<"secondval"<<" "<<secondval<<endl;
+   cout<<"thirdval"<<" "<<thirdval<<endl;
+
+
+}
