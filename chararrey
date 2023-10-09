@@ -1,0 +1,14 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  char ch[5] ="abcd";
+  char *p = &ch[0];
+  cout<<p<<endl;//prints all the arrey cause of implimentation
+
+  char f = 'r';
+  char *fd = &f;//undefind varialbe search for null charcter
+
+  cout<<fd<<endl;
+  return 0; 
+}
