@@ -1,0 +1,36 @@
+#include<bits/stdc++.h>
+using namespace std;
+void update(int **p2){
+  // step : 1 p2 = p2 + 1; no change
+
+  //*p2 = *p2 + 1; // 1 change
+  **p2 = **p2 + 1;
+}
+int main()
+{
+  int i = 0;
+  int *p = &i;
+  int **p2 = &p;
+
+//   cout<<p<<endl;
+//   cout<<&i<<endl;
+//   cout<<&p<<endl;
+//   cout<<**p1<<endl;
+  
+
+//   cout<<i<<endl;
+//   cout<<*p<<endl;
+//   cout<<**p1<<endl;
+//   return 0; 
+
+cout<<"before values"<<endl<<endl;
+cout<<i<<endl;
+cout<<p<<endl;
+cout<<p2<<endl;
+
+update(p2);
+
+cout<<i<<endl;
+cout<<p<<endl;
+cout<<p2<<endl;
+}
